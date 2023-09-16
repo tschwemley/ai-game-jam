@@ -39,6 +39,7 @@
             delve
             go
             gopls
+            raylib
           ];
         };
 
