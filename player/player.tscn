@@ -1,11 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy4e7ee3vwyif"]
+[gd_scene load_steps=4 format=3 uid="uid://dy4e7ee3vwyif"]
 
 [ext_resource type="Script" path="res://player/movement.gd" id="1_sn4ch"]
+[ext_resource type="Texture2D" uid="uid://cbrli1aqybxsy" path="res://Daco_461781.png" id="2_tx8qt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a22xm"]
+size = Vector2(105.5, 114)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_sn4ch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(60.25, 80)
 shape = SubResource("RectangleShape2D_a22xm")
+debug_color = Color(0.631373, 0.415686, 0.843137, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(71.3125, 70.8124)
+scale = Vector2(0.0325226, 0.0355849)
+texture = ExtResource("2_tx8qt")
