@@ -11,10 +11,20 @@ config_version=5
 [application]
 
 config/name="Ai-game-jam"
+run/main_scene="res://main/main.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SceneManager="*res://addons/scene_manager/scene_manager.tscn"
+Scenes="*res://addons/scene_manager/scenes.gd"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/scene_manager/plugin.cfg")
